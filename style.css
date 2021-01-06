@@ -1,0 +1,385 @@
+@charset "utf-8";
+@import url("sanitize.css");
+/*
+Theme Name: ringo
+Theme URI: https://sinanosweet-junkie.com
+Description: 自分のブログテーマ
+Version: 1.0
+Author: Akimoto
+Author URI: https://sinanosweet-junkie.com
+*/
+
+/*コンテンツのサイズ指定*/
+.page-header, .middle, .page-footer {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main:after{
+   display: block;
+   clear: both;
+   content: '';
+}
+
+main{
+   float: left;
+   width: 70%;
+   margin-right: 2%;
+   margin-top: 8px;
+}
+
+/* トップページの最新記事の調整 */
+section.post{
+	border: solid 1px;
+	border-radius: 10px;
+   margin: 0 0 20px 0;
+	background-color: #ffffff;
+}
+
+/* リンクの下線を消す */
+a{
+	text-decoration: none;
+}
+
+/* 記事への追加情報の調整 */
+p.add-info,ul{
+	list-style: none;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0.9em;
+}
+
+p.add-info span.time{
+	padding-right: 20px;
+}
+
+span.tag-icon{
+	font-size: 0.9em;
+	padding-left: 20px;
+}
+
+/* 記事部 */
+article.content{
+	background-color: #ffffff;
+	border: solid 1px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+article.content h2{
+	margin: 0;
+}
+
+article.content hr{
+	border:0;
+	border-top:1px solid;
+}
+
+/* 全体 */
+body{background-color: #f2f2f2;}
+
+/* サイドバー */
+.sidebar {
+	float: left;
+   width: 28%;
+	background: #ffffff;
+	border: solid 1px;
+	border-radius: 10px;
+	padding: 1%;
+   margin-top: 8px;
+}
+
+/* フッター */
+.page-footer {
+	clear: both;
+}
+
+/* ヴィジェットの調整 */
+h2.widget_title{
+	margin: 0;
+	border: solid 1px;
+	border-color: #000000;
+	padding: 4%;
+	border-bottom-style: none;
+	color: #ffffff;
+	background-color: #2d99d2;
+}
+
+.sidebar ul{
+	margin: 0 0 20px 0;
+	border: solid 1px;
+	border-top-style: none;
+	width: 100%;
+	list-style-position: inside;
+}
+
+.sidebar li{
+	padding: 2% 2% 2% 2%;
+}
+
+.textwidget p{
+	margin: 0 0 20px 0;
+	border: solid 1px;
+	border-top-style: none;
+   text-align: center;
+}
+
+.tagcloud{
+	margin: 0 0 20px 0;
+	border: solid 1px;
+	border-top-style: none;
+	width: 100%;
+}
+
+.tagcloud a{
+	padding: 2px;
+}
+
+/*フッターの著作権の調整*/
+p.copyright {text-align:center;}
+
+/*検索フォーム*/
+.searchform {
+	position: relative;
+	text-align: right;
+}
+
+.searchfield {
+	font-size: 14px;
+	width: 75%;
+	margin: 3px;
+	padding: 6px;
+	border: solid 1px #bbb;
+	border-radius: 4px;
+	background-color: #efefef;
+}
+
+.searchsubmit {
+	position: relative;
+	right: 40px;
+	color: #377bf4;
+	background-color: #efefef;
+	border: none;
+}
+
+.searchsubmit:hover {
+	opacity: .6;
+}
+
+/*ヘッダーのメニューバー*/
+ul#main-nav {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	background-color: #007dff;
+	border-radius: 3px;
+	overflow: hidden;
+	width: 100%;
+}
+ul#main-nav li {
+	list-style-type: none;
+	float: left;
+}
+ul#main-nav li a {
+	font-size: 1.1em;
+	display: block;
+	width: 150px;
+	line-height: 35px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	border-right: groove 1px #aaa;
+	text-decoration: none;
+}
+ul#main-nav li a:hover {
+	background-color: #0069d6;
+	color: #fff;
+}
+
+/* コメント欄の調整 */
+#respond label{
+	display:block;
+}
+#respond input,
+#respond textarea{
+	width: 100%;
+}
+#respond input[type="submit"]{
+	width: auto;
+}
+.says{
+	display:none;
+}
+.comment-author,
+.comment-meta{
+	display:inline-block;
+}
+
+/* パンくずリスト */
+ul.breadcrumb{
+  list-style: none;
+  font-size: .8em;
+}
+li.breadcrumb{
+  display: inline;
+}
+li.breadcrumb a{
+  color: inherit;
+  text-decoration: none;
+}
+li.breadcrumb + li.breadcrumb:before{
+  content: ">";
+  margin-right:.3em;
+}
+
+/*個別記事のページナビ*/
+.navigation {
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+}
+.navitop {
+  float:left;
+  width:12%;
+  text-align:center;
+}
+.navileft {
+  float:left;
+  width:44%;
+  text-align:left;
+  word-break:break-all;
+  line-height:1.5em;
+}
+.naviright {
+  float:right;
+  width:44%;
+  text-align:right;
+  word-break:break-all;
+  line-height:1.5em;
+}
+
+/* ページ送り */
+.pagination {
+	clear: both;
+	position: relative;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+.pagination-box {
+	display: inline-block;
+}
+.pagination span, .pagination a {
+	display: block;
+	float: left;
+	margin: 2px 2px 2px 0;
+	padding: 10px 15px 10px 15px;
+	text-decoration: none;
+	width: auto;
+	color: #fff; /* 通常の文字色 */
+	background: #007dff; /* 通常の背景色 */
+}
+.pagination a:hover{
+	color: #007dff; /* マウスホバー時の文字色 */
+	background: #F9D635; /* マウスホバー時の背景色 */
+}
+.pagination .current{
+	padding: 10px 15px 10px 15px;
+	color: #007dff; /* 現在のページの文字色 */
+        background: #F9D635; /* 現在のページの背景色 */
+}
+@media only screen and (max-width: 413px) {
+	.pagination {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.pagination span, .pagination a {
+		padding: 8px 10px 8px 10px;
+	}
+	.pagination .current{
+		padding: 8px 10px 8px 10px;
+	}
+}
+
+/* アイキャッチ画像 */
+section.post {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+.post figure.thumbnail {
+    margin: 10px;
+    float: left;
+}
+
+/* TOPへ戻るボタン */
+.page-top {
+    margin: 0;
+    padding: 0;
+}
+
+.page-top p {
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+	 display: none;
+}
+
+.move-page-top {
+    display: block;
+    background: #4badf4;
+    width: 100px;
+    height: 50px;
+
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.move-page-top:hover {
+    opacity: 0.85;
+}
+
+/* スマホ版 */
+@media (max-width: 767px){
+   main{
+      clear: left;
+      width: 100%;
+   }
+   .sidebar{
+      width: 100%;
+   }
+   section.post{
+      margin-bottom: 5px;
+      height: 120px;
+   }
+   .post h2,.post p{
+      margin: 0;
+   }
+   span.category,.post-categories{
+      display: none;
+   }
+   figure{
+      transform: scale(0.8);
+   }
+   .post figure.thumbnail{
+      margin: auto;
+   }
+   ul#main-nav li a {
+   	width: 80px;
+   }
+}
